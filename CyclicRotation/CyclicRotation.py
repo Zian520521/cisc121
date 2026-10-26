@@ -1,19 +1,22 @@
-class Solution {
-    public int[] solution(int[] A, int K) {
-        int N = A.length;
+class Solution:
+    def solution(self, A, K):
+        # Get the length of the array
+        N = len(A)
 
-        if (N == 0) {
-            return A;
-        }
+        # Return the original array if it is empty
+        if N == 0:
+            return A
 
-        int[] result = new int[N];
-        K = K % N;
+        # Create a new array to store the rotated elements
+        result = [0] * N
 
-        for (int i = 0; i < N; i++) {
-            int newIndex = (i + K) % N;
-            result[newIndex] = A[i];
-        }
+        # Calculate the effective number of rotations
+        K = K % N
 
-        return result;
-    }
-}
+        # Move each element to its new position
+        for i in range(N):
+            newIndex = (i + K) % N
+            result[newIndex] = A[i]
+
+        # Return the rotated array
+        return result
