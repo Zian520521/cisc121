@@ -35,7 +35,7 @@ The app shows a horizontal bar for each stop, an explanation for the current ste
 
 Choose **Run Merge Sort** and use **Previous**, **Next**, **Final result**, or the step slider to inspect the algorithm. Use **Add stop** or edit the data box to provide your own input, then run again.
 
-**Screenshot evidence:** The hosted application was manually checked with five default records on November 18, 2026. Screenshots captured the initial state (Step 1 of 17) and completed state (Step 17 of 17). Capture an additional intermediate Compare/Merge step and save the actual screenshots in the repository before submission.
+**Screenshot evidence:** Six genuine screenshots were captured from the deployed application on November 18, 2026: default Start, default Finished, intermediate Merge, stable equal-count ranking, single stop, and invalid input. See [TESTING.md](TESTING.md) for observed results. The images are included in the separate evidence archive, not yet in this GitHub repository.
 
 ## Problem Breakdown & Computational Thinking
 
@@ -82,7 +82,7 @@ Open the local Gradio URL printed in the terminal (usually http://127.0.0.1:7860
 
 ## Tests and Verification
 
-Run `python -m unittest -v` from this directory. Nine locally checked automated tests cover typical inputs, single stop, equal counts, zero and maximum counts, reverse ordering, invalid numbers, invalid names, stop-limit enforcement and explanatory output.
+Run `python -m unittest -v` from this directory. Nine automated tests (rerun locally on November 18, 2026: 9 passed, 0 failed) cover typical inputs, single stop, equal counts, zero and maximum counts, reverse ordering, invalid numbers, invalid names, stop-limit enforcement and explanatory output.
 
 | Case | Input | Expected |
 |---|---|---|
@@ -95,7 +95,7 @@ Run `python -m unittest -v` from this directory. Nine locally checked automated 
 | Duplicate stop | A 1 and a 3 | Helpful error |
 | Too many stops | 25 entries | Helpful error |
 
-**Deployment status (November 18, 2026):** The Python/Gradio application is running on Render and was manually verified in a browser using the default five-stop data, including the initial and final simulation steps. The Hugging Face Static Space embeds the externally hosted Render app in an iframe; Python does **not** run on Hugging Face. This may not satisfy an assignment that specifically requires a native Gradio Space. Automated tests should be rerun for final verification.
+**Deployment status (November 18, 2026):** The Python/Gradio application is running on Render and was manually verified in a browser using the default five-stop data, including the initial and final simulation steps. The Hugging Face Static Space embeds the externally hosted Render app in an iframe; Python does **not** run on Hugging Face. This may not satisfy an assignment that specifically requires a native Gradio Space. Nine automated tests were rerun locally and passed. The hosting arrangement remains subject to instructor approval.
 
 ## Links
 
@@ -115,8 +115,8 @@ Zian Wang — 20623376. OpenAI ChatGPT (GPT-6) assisted with the app design, imp
 
 - [x] Merge Sort code and Gradio interface
 - [x] README, four computational-thinking pillars, and flowchart
-- [x] Nine automated tests
-- [ ] Add actual application screenshots
+- [x] Nine automated tests (9/9 passing) and browser test report
+- [x] Capture six actual application screenshots (included in separate evidence archive; not yet uploaded to GitHub)
 - [x] Publish Hugging Face Static Space with embedded Render Gradio app and verify default-case UI
 - [x] Add Space URL above
 - [ ] Confirm that an externally hosted iframe is accepted for the Hugging Face requirement
