@@ -35,7 +35,7 @@ The app shows a horizontal bar for each stop, an explanation for the current ste
 
 Choose **Run Merge Sort** and use **Previous**, **Next**, **Final result**, or the step slider to inspect the algorithm. Use **Add stop** or edit the data box to provide your own input, then run again.
 
-**Evidence to add before submission:** actual screenshots from the deployed app showing (1) entered data, (2) highlighted Compare/Merge step, and (3) final ranking. Screenshots must come from the real application, not a mock-up.
+**Screenshot evidence:** The hosted application was manually checked with five default records on November 18, 2026. Screenshots captured the initial state (Step 1 of 17) and completed state (Step 17 of 17). Capture an additional intermediate Compare/Merge step and save the actual screenshots in the repository before submission.
 
 ## Problem Breakdown & Computational Thinking
 
@@ -95,12 +95,13 @@ Run `python -m unittest -v` from this directory. Nine locally checked automated 
 | Duplicate stop | A 1 and a 3 | Helpful error |
 | Too many stops | 25 entries | Helpful error |
 
-**Status:** source-code tests and a local Gradio endpoint have been checked. A public Hugging Face deployment and browser screenshots still need verification. Do not mistake source tests for confirmation that the hosted app works.
+**Deployment status (November 18, 2026):** The Python/Gradio application is running on Render and was manually verified in a browser using the default five-stop data, including the initial and final simulation steps. The Hugging Face Static Space embeds the externally hosted Render app in an iframe; Python does **not** run on Hugging Face. This may not satisfy an assignment that specifically requires a native Gradio Space. Automated tests should be rerun for final verification.
 
 ## Links
 
 **GitHub:** https://github.com/Zian520521/cisc121/tree/main/FinalProject  
-**Hugging Face Space:** _Add public deployed link here._
+**Hugging Face Space (Static embed):** https://huggingface.co/spaces/Frank520521/cisc121-shuttle-merge-sort  
+**Python/Gradio host (Render):** https://cisc121-shuttle-merge-sort.onrender.com
 
 ## Author, Acknowledgment and Resources
 
@@ -116,6 +117,7 @@ Zian Wang — 20623376. OpenAI ChatGPT (GPT-6) assisted with the app design, imp
 - [x] README, four computational-thinking pillars, and flowchart
 - [x] Nine automated tests
 - [ ] Add actual application screenshots
-- [ ] Publish and verify Hugging Face Space
-- [ ] Add Space URL above
+- [x] Publish Hugging Face Static Space with embedded Render Gradio app and verify default-case UI
+- [x] Add Space URL above
+- [ ] Confirm that an externally hosted iframe is accepted for the Hugging Face requirement
 - [ ] Submit **GitHub and Hugging Face Space links** on OnQ by December 8, 2026, 11:59 PM
