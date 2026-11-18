@@ -120,9 +120,9 @@ def render_bars(frame: dict[str, Any]) -> str:
         name = html.escape(item["name"])
         count = item["count"]
         bar_rows.append(
-            f'<div class="crowd-row"><div class="crowd-name">{position + 1}. {name}</div>'
+            f'<div class="crowd-row"><div class="crowd-name" style="color:#0f172a !important;opacity:1 !important">{position + 1}. {name}</div>'
             f'<div class="crowd-track"><div class="crowd-fill" style="width:{width}%;background:{color}"></div></div>'
-            f'<div class="crowd-value">{count}</div></div>'
+            f'<div class="crowd-value" style="color:#0f172a !important;opacity:1 !important">{count}</div></div>'
         )
     action = html.escape(frame["action"])
     return (
