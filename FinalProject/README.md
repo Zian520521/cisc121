@@ -35,7 +35,22 @@ The app shows a horizontal bar for each stop, an explanation for the current ste
 
 Choose **Run Merge Sort** and use **Previous**, **Next**, **Final result**, or the step slider to inspect the algorithm. Use **Add stop** or edit the data box to provide your own input, then run again.
 
-**Screenshot evidence:** Six genuine screenshots were captured from the deployed application on November 18, 2026: default Start, default Finished, intermediate Merge, stable equal-count ranking, single stop, and invalid input. See [TESTING.md](TESTING.md) for observed results. The images are included in the separate evidence archive, not yet in this GitHub repository.
+**Screenshot evidence:** Six genuine screenshots from the deployed application have been uploaded to this GitHub folder and linked below. See [TESTING.md](TESTING.md) for the corresponding observed results.
+
+## Screenshots from the deployed application
+
+These six screenshots are stored directly in this GitHub folder and were captured from the real running app:
+
+| Screenshot | What it demonstrates |
+|---|---|
+| [01 — Start](01_default_start.png) | Five input stops; initial arrangement |
+| [02 — Finished](02_default_finished.png) | Final descending ranking |
+| [03 — Merge step](03_merge_step.png) | Highlighted intermediate Merge Sort operation |
+| [04 — Stable equal counts](04_stable_equal_counts.png) | Two tied stops keep their original order |
+| [05 — Single stop](05_single_stop.png) | A one-record input works |
+| [06 — Invalid input](06_invalid_input.png) | Clear user-facing validation error |
+
+![Recorded Merge Sort step](03_merge_step.png)
 
 ## Problem Breakdown & Computational Thinking
 
@@ -116,7 +131,7 @@ Zian Wang — 20623376. OpenAI ChatGPT (GPT-6) assisted with the app design, imp
 - [x] Merge Sort code and Gradio interface
 - [x] README, four computational-thinking pillars, and flowchart
 - [x] Nine automated tests (9/9 passing) and browser test report
-- [x] Capture six actual application screenshots (included in separate evidence archive; not yet uploaded to GitHub)
+- [x] Upload six actual application screenshots to GitHub and link them in README
 - [x] Publish Hugging Face Static Space with embedded Render Gradio app and verify default-case UI
 - [x] Add Space URL above
 - [ ] Confirm that an externally hosted iframe is accepted for the Hugging Face requirement
