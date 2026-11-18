@@ -207,10 +207,10 @@ CSS = """
 .crowd-wrap {background:#f8fafc;border:1px solid #e2e8f0;border-radius:16px;padding:20px;color:#0f172a}
 .crowd-action {font-weight:750;font-size:16px;margin-bottom:16px;color:#0f172a}
 .crowd-row {display:grid;grid-template-columns:145px 1fr 56px;align-items:center;gap:12px;margin:11px 0}
-.crowd-name {font-size:13px;overflow-wrap:anywhere}
+.crowd-name {font-size:13px;overflow-wrap:anywhere;color:#0f172a !important}
 .crowd-track {height:22px;background:#e2e8f0;border-radius:6px;overflow:hidden}
 .crowd-fill {height:100%;border-radius:6px;transition:width .18s ease}
-.crowd-value {font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.crowd-value {font-weight:700;font-variant-numeric:tabular-nums;text-align:right;color:#0f172a !important}
 .crowd-legend {font-size:12px;color:#475569;margin-top:18px}
 @media(max-width:620px){.crowd-row{grid-template-columns:100px 1fr 40px;gap:6px}.crowd-wrap{padding:12px}}
 """
