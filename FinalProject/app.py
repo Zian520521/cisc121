@@ -92,11 +92,9 @@ def merge_sort_steps(stops: list[dict[str, Any]]) -> tuple[list[dict[str, Any]],
                 j += 1
         # Copy remaining elements into the merged group.
         while i < len(left_items):
-            merged.append(left_items[i])
-            i += 1
+            merged.append(left_items[i]); i += 1
         while j < len(right_items):
-            merged.append(right_items[j])
-            j += 1
+            merged.append(right_items[j]); j += 1
         working[left:right] = merged
         record("Merge", f"Merged positions {left + 1}–{right} in descending crowd order.",
                focus=[item["id"] for item in merged], segment=(left, right))
@@ -140,6 +138,7 @@ def ranking_markdown(ranked: list[dict[str, Any]]) -> str:
         return "No ranking yet."
     lines = ["| Rank | Shuttle stop | Estimated riders |", "|---:|---|---:|"]
     for index, item in enumerate(ranked, start=1):
+        # Escape characters that would interfere with markdown tables.
         clean = item["name"].replace("|", "\\|")
         lines.append(f"| {index} | {clean} | {item['count']} |")
     top_count = ranked[0]["count"]
@@ -217,7 +216,7 @@ CSS = """
 
 
 def build_app():
-    with gr.Blocks(title="Shuttle Stop Crowd Ranking — Merge Sort", css=CSS) as demo:
+    with gr.Blocks(title="Shuttle Stop Crowd Ranking — Merge Sort") as demo:
         gr.Markdown("# 🚌 Shuttle Stop Crowd Ranking\n"
                     "**Learn Merge Sort by ranking campus shuttle stops from busiest to quietest.** "
                     "All starting numbers are fictional examples; replace them with your own estimates.")
@@ -262,7 +261,5 @@ def build_app():
     return demo
 
 
-demo = build_app()
-
 if __name__ == "__main__":
-    demo.launch()
+    build_app().launch(css=CSS)

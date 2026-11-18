@@ -1,0 +1,14 @@
+test_explanation (test_app.ProjectTests.test_explanation) ... ok
+test_invalid_counts (test_app.ProjectTests.test_invalid_counts) ... ok
+test_invalid_names_and_format (test_app.ProjectTests.test_invalid_names_and_format) ... ok
+test_limit (test_app.ProjectTests.test_limit) ... ok
+test_reverse_order (test_app.ProjectTests.test_reverse_order) ... ok
+test_same_count_stable (test_app.ProjectTests.test_same_count_stable) ... ok
+test_single (test_app.ProjectTests.test_single) ... ok
+test_typical (test_app.ProjectTests.test_typical) ... ok
+test_zero_and_high (test_app.ProjectTests.test_zero_and_high) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
