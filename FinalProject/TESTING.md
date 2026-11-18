@@ -12,7 +12,7 @@ This report records observed results from the deployed application and its Pytho
 | Single stop | Library 50 | Library ranked #1 | Pass |
 | Invalid input | Library,abc | User-facing error: “Line 1: crowd count must be a whole nonnegative number.” | Pass |
 
-The manual tests were documented by six genuine screenshots captured from the hosted Hugging Face page (which embeds the Render-hosted Gradio app). The screenshots were collected into a separate evidence archive; they have **not** yet been uploaded into this GitHub repository.
+The manual tests were documented by six genuine screenshots captured from the hosted Hugging Face page (which embeds the Render-hosted Gradio app). All six images are now uploaded directly to this GitHub repository: [start](01_default_start.png), [finished](02_default_finished.png), [merge](03_merge_step.png), [stable ties](04_stable_equal_counts.png), [single stop](05_single_stop.png), and [invalid input](06_invalid_input.png).
 
 ## Automated tests
 
